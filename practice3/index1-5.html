@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Centered Container</title>    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            align-items: flex-start;
+            height: 100vh;
+            background-color: aqua;
+        }
+
+        .centered-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            background-color: #e3f2fd;
+            border: 2px solid #90caf9;
+            border-radius: 10px;
+        }
+
+        .horizontal-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 500px;
+            height: 100px;
+            background-color: #fff3e0;
+            border: 2px solid #ffcc80;
+            border-radius: 10px;
+
+        }
+
+        .bottom-aligned-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: 300px;
+            height: 200px;
+            background-color: #e3f2fd;
+            border: 2px solid #b39ddb;
+            border-radius: 10px; 
+            padding: 10px; 
+        }
+
+        
+        .vertical-right-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: 300px;
+            height: 300px;
+            background-color: #853c95;
+            border: 2px solid #b39ddb;
+            border-radius: 10px; 
+            padding: 10px; 
+        }
+
+        .equal-space-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 500px;
+            height: 100px;
+            background-color: #eff7f8;
+            border: 2px solid #b39ddb;
+            border-radius: 10px; 
+            padding: 10px; 
+        }
+
+        .item {
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            background-color: aqua;
+            border: 1px solid #ccc;
+        }
+
+        .item.small {
+            flex: 1;
+
+        }
+        .item.medium {
+            flex: 2;
+        }
+        .item.large {
+            flex: 3;
+        }
+        </style>
+      </head>
+      <body>  
+        <!--Centered Container-->
+        <div  class="centered-container">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+          </div>
+          
+           <!--Horizontal Spaced Container-->
+        <div  class="horizontal-container">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+          </div>
+
+          <!--Bottom-Aligned Container-->
+        <div  class="bottom-aligned-container">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            
+        </div>
+
+         <!--Vertical Right-Aligned Container-->
+         <div  class="vertical-right-container">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+            
+        </div>
+
+        <!--Equal Space Container-->
+        <div  class="equal-space-container">
+            <div class="item small">Small</div>
+            <div class="item medium">Medium</div>
+            <div class="item large">Large</div>
+           </div>
+        </body>
+        </html>
+

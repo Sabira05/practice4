@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Containers</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            align-items: flex-start;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .wrapping-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 400px;
+            background-color: #e1f5fe;
+            border: 2px solid #81d4fa;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .fixed-and-centered-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 500px;
+            height: 100px;
+            background-color: #ffe0b2;
+            border: 2px solid #ffab40;
+            border-radius: 10px;
+            padding: 0 10px;
+        }
+
+        .end-aligned-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 500px;
+            height: 100px;
+            background-color: #dcedc8;
+            border: 2px solid #aed581;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .bottom-aligned-different-heights {
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+            width: 400px;
+            background-color: #ede7f6;
+            border: 2px solid #b39ddb;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .spaced-horizontal-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 500px;
+            background-color: #fbe9e7;
+            border: 2px solid #ffab91;
+            padding: 0 10px;
+            border-radius: 10px;
+        }
+
+        .item {
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+
+        .item.tall {
+            height: 80px;
+        }
+
+        .item.medium {
+            height: 60px;
+        }
+
+        .item.short {
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Wrapping Container -->
+    <div class="wrapping-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <!-- Fixed and Centered Container -->
+    <div class="fixed-and-centered-container">
+        <div class="item">Left</div>
+        <div class="item">Center</div>
+        <div class="item">Right</div>
+    </div>
+
+    <!-- End-Aligned Container -->
+    <div class="end-aligned-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <!-- Bottom-Aligned with Different Heights -->
+    <div class="bottom-aligned-different-heights">
+        <div class="item short">Short</div>
+        <div class="item medium">Medium</div>
+        <div class="item tall">Tall</div>
+    </div>
+
+    <!-- Spaced Horizontal Container -->
+    <div class="spaced-horizontal-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+</body>
+</html>

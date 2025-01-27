@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Layouts</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            align-items: flex-start;
+            background-color: #f4f4f4;
+        }
+
+        .vertical-center-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 200px;
+            background-color: #ffecb3;
+            border: 2px solid #ffd54f;
+            border-radius: 10px;
+        }
+
+        .vertical-center-container .item {
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+
+        .end-aligned-container {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            width: 500px;
+            background-color: #c8e6c9;
+            border: 2px solid #81c784;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .end-aligned-container .item {
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+
+        .left-aligned-rows {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 500px;
+            background-color: #e1bee7;
+            border: 2px solid #ce93d8;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .left-aligned-rows .row {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .left-aligned-rows .row .item {
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+
+        .space-between-neighbors {
+            display: flex;
+            justify-content: space-around;
+            width: 500px;
+            background-color: #bbdefb;
+            border: 2px solid #64b5f6;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .space-between-neighbors .item {
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+
+        .equal-vertical-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 300px;
+            width: 200px;
+            background-color: #f0f4c3;
+            border: 2px solid #dce775;
+            border-radius: 10px;
+        }
+
+        .equal-vertical-container .item {
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Vertical Center Container -->
+    <div class="vertical-center-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+
+    <!-- End Aligned Container -->
+    <div class="end-aligned-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <!-- Left Aligned Rows -->
+    <div class="left-aligned-rows">
+        <div class="row">
+            <div class="item">Row 1 - Item 1</div>
+            <div class="item">Row 1 - Item 2</div>
+        </div>
+        <div class="row">
+            <div class="item">Row 2 - Item 1</div>
+            <div class="item">Row 2 - Item 2</div>
+        </div>
+        <div class="row">
+            <div class="item">Row 3 - Item 1</div>
+            <div class="item">Row 3 - Item 2</div>
+        </div>
+    </div>
+
+    <!-- Space Between Neighbors -->
+    <div class="space-between-neighbors">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <!-- Equal Vertical Space Container -->
+    <div class="equal-vertical-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+</body>
+</html>

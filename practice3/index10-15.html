@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Layouts</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            align-items: flex-start;
+            background-color: #f4f4f4;
+        }
+
+        .equal-width-container {
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
+            background-color: #e1f5fe;
+            border: 2px solid #81d4fa;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .equal-width-container .item {
+            flex: 1;
+            margin: 0 5px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+
+        .vertical-space-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 300px;
+            width: 200px;
+            background-color: #ffe0b2;
+            border: 2px solid #ffab40;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .vertical-space-container .item {
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+
+        .right-aligned-container {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            width: 500px;
+            background-color: #dcedc8;
+            border: 2px solid #aed581;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .right-aligned-container .item {
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+
+        .central-stretch-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 500px;
+            background-color: #ede7f6;
+            border: 2px solid #b39ddb;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .central-stretch-container .item {
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+
+        .central-stretch-container .item.center {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .fixed-and-flex-container {
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
+            background-color: #fbe9e7;
+            border: 2px solid #ffab91;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .fixed-and-flex-container .item {
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+
+        .fixed-and-flex-container .item.fixed {
+            width: 100px;
+        }
+
+        .fixed-and-flex-container .item.flex {
+            flex: 1;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Equal Width Container -->
+    <div class="equal-width-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <!-- Vertical Space Container -->
+    <div class="vertical-space-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+
+    <!-- Right Aligned Container -->
+    <div class="right-aligned-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <!-- Central Stretch Container -->
+    <div class="central-stretch-container">
+        <div class="item">Item 1</div>
+        <div class="item center">Stretch</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <!-- Fixed and Flex Container -->
+    <div class="fixed-and-flex-container">
+        <div class="item fixed">Fixed 1</div>
+        <div class="item flex">Flex</div>
+        <div class="item fixed">Fixed 2</div>
+        <div class="item flex">Flex</div>
+        <div class="item flex">Flex</div>
+    </div>
+</body>
+</html>
