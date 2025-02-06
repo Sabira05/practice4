@@ -1,0 +1,26 @@
+.header{
+  padding-top: 25px;
+}
+.nav-list{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 30px;
+  background-color: var(--font-color-gray);
+  margin-bottom: 47px;
+}
+.nav-link{
+  color: var(--font-color-gray);
+  font-size: 18px;
+  font-weight: 700;
+}
+.nav-link:hover{
+  color: var(--font-color-main);
+}
